@@ -20,15 +20,11 @@ print(result)
 
 # Існує ліст з різними даними, наприклад lst1 = ['1', '2', 3, True, 'False', 5, '6', 7, 8, 'Python', 9, 0, 'Lorem Ipsum'].
 # Напишіть код, який сфлрмує новий list (наприклад lst2), який би містив всі числові змінні (int, float), які є в lst1.
-# Майте на увазі, що данні в lst1 не є статичними можуть змінюватись від запуску до запуску.
-
+# Майте на увазі, що данні в lst1 не є статичними можуть змінюватись від запуску до  запускую
 lst1 = ['1', '2', 3, True, 'False', 5, '6', 7, 8, 'Python', 9, 0, 'Lorem Ipsum']
-lst1.remove(True)
-
 lst2 = []
 for elem in lst1:
-    if isinstance(elem, (int, float)):
+    if type(elem) in (int, float):
         lst2.append(elem)
 print(lst2)
-
 
